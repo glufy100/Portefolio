@@ -10,7 +10,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-	<script src="script.js" defer></script>
     <title>index</title>
   </head>
   <body>
@@ -56,51 +55,55 @@
     </header>
 
     <section class="formation-section" id="formation-section">
-      <div class="timeline-container">
-        <h2>Formation & Diplômes</h2>
-        <div class="timeline">
+      <h2>Formation & Diplômes</h2>
+      <div class="formation-wrapper">
+        <div class="timeline-container">
           <div class="timeline-arrow"></div>
+          
           <div class="timeline-item" data-formation="bac">
             <div class="timeline-dot"></div>
             <span class="timeline-label">Baccalauréat</span>
           </div>
+          
           <div class="timeline-item" data-formation="dut">
             <div class="timeline-dot"></div>
             <span class="timeline-label">DUT Réseau et Télécommunications</span>
           </div>
+          
           <div class="timeline-item" data-formation="but">
             <div class="timeline-dot"></div>
             <span class="timeline-label">BUT Réseau et Télécommunications</span>
           </div>
+          
           <div class="timeline-item" data-formation="avenir">
             <div class="timeline-dot"></div>
             <span class="timeline-label">À venir</span>
           </div>
         </div>
+        
+        <aside class="formation-details">
+          <h3>Détails</h3>
+          <div class="detail-content" id="detail-bac">
+            <h4>Baccalauréat</h4>
+            <p>Description du baccalauréat, année d'obtention, mention...</p>
+          </div>
+          <div class="detail-content" id="detail-dut">
+            <h4>DUT Réseau et Télécommunications</h4>
+            <p>Description du DUT, compétences acquises...</p>
+          </div>
+          <div class="detail-content" id="detail-but">
+            <h4>BUT Réseau et Télécommunications</h4>
+            <p>Description du BUT, spécialisation...</p>
+          </div>
+          <div class="detail-content" id="detail-avenir">
+            <h4>À venir</h4>
+            <p>Projets futurs, master envisagé, domaine d'expertise...</p>
+          </div>
+          <p class="placeholder">
+            Survolez une formation pour voir les détails
+          </p>
+        </aside>
       </div>
-
-      <aside class="formation-details">
-        <h3>Détails</h3>
-        <div class="detail-content" id="detail-bac" style="display: none">
-          <h4>Baccalauréat</h4>
-          <p>Description du baccalauréat, année d'obtention, mention...</p>
-        </div>
-        <div class="detail-content" id="detail-dut" style="display: none">
-          <h4>DUT Réseau et Télécommunications</h4>
-          <p>Description du DUT, compétences acquises...</p>
-        </div>
-        <div class="detail-content" id="detail-but" style="display: none">
-          <h4>BUT Réseau et Télécommunications</h4>
-          <p>Description du BUT, spécialisation...</p>
-        </div>
-        <div class="detail-content" id="detail-avenir" style="display: none">
-          <h4>À venir</h4>
-          <p>Projets futurs, master envisagé, domaine d'expertise...</p>
-        </div>
-        <p class="placeholder">
-          Cliquez sur une formation pour voir les détails
-        </p>
-      </aside>
     </section>
     <section class="experiences" id="experiences-section">
       <h2>Expériences</h2>
