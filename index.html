@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Version Cours</title>
-    <link rel="stylesheet" href="style-cours.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Présentation -->
@@ -20,6 +20,7 @@
                 <h1>Louis Erb</h1>
                 <p class="subtitle">Étudiant en 1re année de BUT Réseaux et Télécommunications</p>
                 <p>Je m'appelle Louis Erb, j'ai 18 ans et je suis né le 31 octobre 2007. Actuellement en première année de BUT Réseaux et Télécommunications, j'ai acquis des compétences en administration réseau, développement web et cybersécurité. Je fais partie d'un ciné-club et j'ai aussi suivi une formation pratique à 42, ce qui m'a permis de développer l'autonomie, la collaboration et la résolution de problèmes complexes.</p>
+                <p class="location-link">Basé à <a href="https://maps.google.com/?q=Mulhouse" target="_blank" rel="noreferrer">Mulhouse</a>, originaire de Strasbourg · Mobile dans tout le Grand Est</p>
             </div>
             
             <!-- Boutons de navigation circulaires -->
@@ -51,22 +52,27 @@
                     
                     <div class="timeline-item" data-formation="bac">
                         <div class="timeline-dot"></div>
-                        <span class="timeline-label">Baccalauréat</span>
+                        <a class="timeline-label" href="formations.html#bac">Bac STI2D</a>
                     </div>
                     
-                    <div class="timeline-item" data-formation="dut">
+                    <div class="timeline-item" data-formation="pix">
                         <div class="timeline-dot"></div>
-                        <span class="timeline-label">DUT Réseau et Télécommunications</span>
+                        <a class="timeline-label" href="formations.html#pix">Certification PIX</a>
+                    </div>
+
+                    <div class="timeline-item" data-formation="but1">
+                        <div class="timeline-dot"></div>
+                        <a class="timeline-label" href="formations.html#but1">BUT RT · 1re année</a>
                     </div>
                     
-                    <div class="timeline-item" data-formation="but">
+                    <div class="timeline-item" data-formation="but2">
                         <div class="timeline-dot"></div>
-                        <span class="timeline-label">BUT Réseau et Télécommunications</span>
+                        <a class="timeline-label" href="formations.html#but2">BUT RT · Parcours à venir</a>
                     </div>
                     
                     <div class="timeline-item" data-formation="avenir">
                         <div class="timeline-dot"></div>
-                        <span class="timeline-label">À venir</span>
+                        <a class="timeline-label" href="formations.html#avenir">Objectifs professionnels</a>
                     </div>
                 </div>
                 
@@ -76,47 +82,65 @@
                     <p class="placeholder">Survolez une formation pour voir les détails...</p>
                     
                     <div class="detail-content" id="detail-bac">
-                        <h4>Baccalauréat Général</h4>
-                        <p class="date">Obtenu en 2025</p>
-                        <p>Baccalauréat général avec mention Bien. Spécialités : Mathématiques et Sciences de l'Ingénieur.</p>
-                        <p>Cette formation m'a permis d'acquérir les bases scientifiques nécessaires pour poursuivre mes études supérieures.</p>
-                    </div>
-                    
-                    <div class="detail-content" id="detail-dut">
-                        <h4>DUT Réseau et Télécommunications</h4>
-                        <p class="date">2020 - 2022</p>
-                        <p>Formation de deux ans à l'IUT spécialisée dans les réseaux informatiques et les télécommunications.</p>
-                        <h5>Compétences acquises :</h5>
+                        <h4>Lycée STI2D – Heinrich Nessel (Haguenau)</h4>
+                        <p class="date">2021 – 2024 · Mention Assez Bien (12,82)</p>
+                        <p>Spécialité Systèmes d’Information et Numérique, avec découverte de l’innovation technologique et de l’éco-conception. Formation orientée électronique embarquée, programmation et gestion de projets techniques.</p>
+                        <h5>Projets et compétences développées :</h5>
                         <ul>
-                            <li>Administration systèmes et réseaux</li>
-                            <li>Protocoles TCP/IP</li>
-                            <li>Développement web (HTML, CSS, PHP)</li>
-                            <li>Bases de données MySQL</li>
+                            <li>Programmation d’Arduino et de systèmes embarqués.</li>
+                            <li>Conception de maquettes domotiques et prototypes électroniques.</li>
+                            <li>Travail en équipe, prototypage et conduit de projet.</li>
                         </ul>
                     </div>
                     
-                    <div class="detail-content" id="detail-but">
-                        <h4>BUT Réseau et Télécommunications</h4>
-                        <p class="date">2025 - 2028 (en cours)</p>
-                        <p>Première année de BUT Réseaux et Télécommunications, avec une future spécialisation prévue en cybersécurité des systèmes et réseaux.</p>
+                    <div class="detail-content" id="detail-but1">
+                        <h4>BUT Réseaux & Télécoms – 1re année</h4>
+                        <p class="date">IUT de Colmar · 2025 - 2026 (en cours)</p>
+                        <p>Découverte des fondamentaux réseaux, de l’administration système et du développement web au sein du département RT.</p>
                         <h5>Modules principaux :</h5>
                         <ul>
-                            <li>Sécurité des réseaux et systèmes</li>
-                            <li>Développement d'applications web avancées</li>
-                            <li>Virtualisation et Cloud Computing</li>
-                            <li>Gestion de projets informatiques</li>
+                            <li>Architecture des réseaux IP et services d’infrastructure.</li>
+                            <li>Introduction à la cybersécurité et à la supervision.</li>
+                            <li>Développement web responsive (HTML, CSS, JS).</li>
+                            <li>Outils collaboratifs, gestion de projet et méthodologie.</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-content" id="detail-pix">
+                        <h4>Certification PIX</h4>
+                        <p class="date">Session 2024 · Niveau certifié sur les compétences numériques</p>
+                        <p>Certification nationale attestant de mes compétences numériques transverses, essentielle pour renforcer mon profil en cybersécurité.</p>
+                        <p>Elle se compose d'épreuves pratiques en ligne et valide ma capacité à collaborer, sécuriser mes usages et résoudre des problèmes informatiques du quotidien.</p>
+                        <h5>Points forts :</h5>
+                        <ul>
+                            <li>Hygiène numérique et protection des données personnelles.</li>
+                            <li>Collaboration en ligne et gestion avancée des documents.</li>
+                            <li>Résolution de problèmes techniques et scripts d’automatisation.</li>
+                        </ul>
+                        <p><a href="https://pix.fr" target="_blank" rel="noreferrer">Découvrir PIX</a></p>
+                    </div>
+                    
+                    <div class="detail-content" id="detail-but2">
+                        <h4>BUT RT – Parcours cybersécurité (préparation)</h4>
+                        <p class="date">2026 - 2028 (prévision)</p>
+                        <p>Objectif : rejoindre le parcours cybersécurité des systèmes dans la continuité de la 1re année pour approfondir la défense des réseaux.</p>
+                        <h5>Compétences visées :</h5>
+                        <ul>
+                            <li>Gestion des incidents et réponses aux attaques.</li>
+                            <li>Automatisation et scripts pour l’exploitation réseau.</li>
+                            <li>Conception d’architectures résilientes.</li>
                         </ul>
                     </div>
                     
                     <div class="detail-content" id="detail-avenir">
-                        <h4>Projets d'avenir</h4>
-                        <p class="date">À partir de 2025</p>
-                        <p>Après l'obtention de mon BUT, je souhaite me spécialiser davantage dans le domaine de la cybersécurité.</p>
-                        <h5>Objectifs :</h5>
+                        <h4>Objectifs professionnels</h4>
+                        <p class="date">Après 2028</p>
+                        <p>À moyen terme, je souhaite exercer comme ingénieur cybersécurité en environnement audiovisuel ou médias.</p>
+                        <h5>Prochains jalons :</h5>
                         <ul>
-                            <li>Master en Cybersécurité</li>
-                            <li>Certifications professionnelles (CEH, OSCP)</li>
-                            <li>Expérience en pentesting et audit de sécurité</li>
+                            <li>Alternance au sein d’un SOC ou d’une équipe sécurité.</li>
+                            <li>Passage de certifications (CEH, OSCP) après le BUT.</li>
+                            <li>Projets personnels en cybersécurité et audiovisuel.</li>
                         </ul>
                     </div>
                 </aside>
@@ -140,6 +164,7 @@
                         <h3>Job Étudiant - ARTE</h3>
                         <p class="experience-date">Août 2025</p>
                         <p>Travail en restauration au sein des bâtiments d’ARTE à Strasbourg pour le prestataire API. Je participais à la préparation en légumerie, à l’aide à la cafétéria, à la plonge et au nettoyage des espaces. J’ai appris à respecter strictement les règles d’hygiène et de sécurité, à organiser mon travail efficacement et à maintenir un bon rythme dans un environnement exigeant. Cette expérience m’a permis de développer ma rigueur, mon autonomie et mon sens du travail en équipe.</p>
+                        <a href="experiences.html#experience-api-arte">Voir plus d'expériences</a>
                     </div>
                 </article>
 
@@ -160,69 +185,69 @@
         </div>
     </section>
 
-    <!-- Compétences -->
-    <section id="competences" class="section-competences">
+    <!-- Compétences & Informations -->
+    <section id="competences" class="section-competences section-duo">
         <div class="container">
-            <h2>Compétences</h2>
-            <div class="grid-competences">
-                <div class="competence-card">
-                    <h3>Développement Web</h3>
-                    <ul>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript</li>
-                        <li>PHP & MySQL</li>
-                        <li>Responsive Design</li>
-                    </ul>
+            <div class="duo-panels">
+                <div class="panel panel-competences">
+                    <h2>Compétences</h2>
+                    <div class="flex-competences">
+                        <div class="competence-card">
+                            <h3>Compétences Réseaux & Télécoms</h3>
+                            <ul>
+                                <li>Configuration de routeurs et commutateurs</li>
+                                <li>Services d'annuaire et supervision</li>
+                                <li>Virtualisation et segmentation réseau</li>
+                                <li>Respect des bonnes pratiques de sécurité</li>
+                            </ul>
+                        </div>
+                        <div class="competence-card">
+                            <h3>Compétences Techniques</h3>
+                            <ul>
+                                <li>Développement web (HTML, CSS, JavaScript)</li>
+                                <li>Scripts Python pour l’automatisation</li>
+                                <li>Bases de données MySQL</li>
+                                <li>Docker, Git et intégration continue</li>
+                            </ul>
+                        </div>
+                        <div class="competence-card">
+                            <h3>Compétences Humaines</h3>
+                            <ul>
+                                <li>Communication claire et vulgarisation</li>
+                                <li>Travail en équipe et pair-programming</li>
+                                <li>Gestion de la pression et des imprévus</li>
+                                <li>Organisation et sens du service</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="competence-card">
-                    <h3>Réseaux</h3>
-                    <ul>
-                        <li>Configuration routeurs</li>
-                        <li>TCP/IP</li>
-                        <li>VPN & Firewall</li>
-                        <li>Administration Linux</li>
-                    </ul>
-                </div>
-                <div class="competence-card">
-                    <h3>Outils</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <li>Docker</li>
-                        <li>Wireshark</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Informations & Contact -->
-    <section id="contact" class="section-contact">
-        <div class="container">
-            <h2>Informations & Contact</h2>
-            <div class="grid-infos">
-                <div class="info-card">
-                    <h3>Langues</h3>
-                    <ul>
-                        <li>Français (natif)</li>
-                        <li>Anglais (B2)</li>
-                        <li>Allemand (A2)</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h3>Loisirs</h3>
-                    <ul>
-                        <li>Informatique</li>
-                        <li>Sport</li>
-                        <li>Lecture</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h3>Contact</h3>
-                    <p>Email : louis.erb@outlook.fr</p>
-                    <p>Tél : 06 81 61 63 05</p>
-                    <p>Âge : 18 ans</p>
-                    <p>Né le : 31/10/2007</p>
+                <div class="panel panel-contact" id="contact">
+                    <h2>Informations & Contact</h2>
+                    <div class="grid-infos">
+                        <div class="info-card">
+                            <h3>Langues</h3>
+                            <ul>
+                                <li>Français (natif)</li>
+                                <li>Anglais (B2)</li>
+                                <li>Allemand (A2)</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Loisirs</h3>
+                            <ul>
+                                <li>Informatique</li>
+                                <li>Sport</li>
+                                <li>Lecture</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Contact</h3>
+                            <p>Email : louis.erb@outlook.fr</p>
+                            <p>Tél : 06 81 61 63 05</p>
+                            <p>Âge : 18 ans</p>
+                            <p>Né le : 31/10/2007</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,7 +256,7 @@
     <!-- Pied de page -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Louis Dupont - Tous droits réservés</p>
+            <p>&copy; 2025 Louis Erb - Tous droits réservés</p>
         </div>
     </footer>
 </body>

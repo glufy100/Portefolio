@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+link {
+  text-decoration: underline;
+}
+
 .container {
   width: 100%;
   max-width: 100%;
@@ -84,7 +88,7 @@ section {
 
 .text-box {
   background-color: #666;
-  padding: 50px 90px;
+  padding: 30px 30px;
   border-radius: 24px;
   text-align: center;
 }
@@ -189,9 +193,17 @@ section {
 }
 
 .timeline-label {
+  display: inline-block;
   background-color: #666;
   padding: 12px 18px;
   border-radius: 18px;
+  color: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-label:hover,
+.timeline-label:focus {
+  background-color: #747474;
 }
 
 .formation-details {
@@ -251,8 +263,9 @@ section {
 }
 
 .timeline-container:has(.timeline-item[data-formation="bac"]:hover) ~ .formation-details #detail-bac,
-.timeline-container:has(.timeline-item[data-formation="dut"]:hover) ~ .formation-details #detail-dut,
-.timeline-container:has(.timeline-item[data-formation="but"]:hover) ~ .formation-details #detail-but,
+.timeline-container:has(.timeline-item[data-formation="pix"]:hover) ~ .formation-details #detail-pix,
+.timeline-container:has(.timeline-item[data-formation="but1"]:hover) ~ .formation-details #detail-but1,
+.timeline-container:has(.timeline-item[data-formation="but2"]:hover) ~ .formation-details #detail-but2,
 .timeline-container:has(.timeline-item[data-formation="avenir"]:hover) ~ .formation-details #detail-avenir {
   display: block;
 }
@@ -343,10 +356,13 @@ section {
   flex: 1;
 }
 
-.grid-competences {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.flex-competences {
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+}
+.flex-competences .competence-card {
+  flex: 1 1 280px;
 }
 
 .competence-card {
@@ -393,4 +409,180 @@ footer {
   text-align: center;
   padding: 30px 0;
   margin-top: 40px;
+}
+
+.location-link {
+  margin-top: 12px;
+  color: #e8e8e8;
+}
+
+.location-link a {
+  text-decoration: underline;
+}
+
+.back-link {
+  font-weight: 600;
+  color: #f2f2f2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.detail-page {
+  padding: 70px 0 100px;
+  align-items: flex-start;
+}
+
+.experience-detail {
+  gap: 30px;
+}
+
+.experience-detail > h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.detail-intro {
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid #777;
+}
+
+.detail-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.detail-section h3,
+.detail-section h4 {
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.detail-section p {
+  color: #f0f0f0;
+}
+
+.detail-section ul {
+  list-style: disc;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.day-card {
+  background-color: #5d5d5d;
+  padding: 24px 28px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.day-card ul {
+  list-style: disc;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-highlight {
+  background-color: #5d5d5d;
+  border-left: 4px solid #9a9a9a;
+  padding: 18px 24px;
+  border-radius: 18px;
+}
+
+.skills-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skill-column {
+  background-color: #5d5d5d;
+  padding: 24px 28px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-column ul {
+  list-style: disc;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-conclusion {
+  margin-top: 10px;
+  line-height: 1.7;
+  color: #f5f5f5;
+}
+
+.card-link {
+  color: #f8f8f8;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .presentation {
+    padding: 50px 24px;
+    gap: 40px;
+  }
+
+  .experience-card.large {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-images {
+    width: 100%;
+    height: 220px;
+  }
+
+  .flex-competences {
+    flex-direction: column;
+  }
+
+  .skills-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-section {
+    padding-top: 18px;
+  }
+
+  .detail-page {
+    padding: 50px 0 80px;
+  }
 }
