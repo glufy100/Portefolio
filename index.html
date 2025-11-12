@@ -1,287 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>index</title>
-  </head>
-  <body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Version Cours</title>
+    <link rel="stylesheet" href="style-cours.css">
+</head>
+<body>
+    <!-- Présentation -->
     <header class="presentation">
-      <div class="background-text text-1">Bonjour</div>
-      <div class="background-text text-2">Bonjour</div>
-      <div class="background-text text-3">Bonjour</div>
-      <div class="background-text text-4">Bonjour</div>
-      <div class="background-text text-5">Bonjour</div>
-      <div class="photo">
-        <img src="image/image.png" alt="Photo de profil" />
-      </div>
-      <div class="text-section">
-        <div class="text-box">
-          <p>Présentation de moi rapide</p>
-        </div>
-        <div class="buttons-container">
-          <button class="cv-btn" title="Download CV" data-text="Download">
-            <i class="fas fa-download"></i>
-          </button>
-          <a href="#formation-section">
-            <button title="Formation & Diplômes" data-text="Formation">
-              <i class="fas fa-graduation-cap"></i>
-            </button>
-          </a>
-          <a href="#experiences-section">
-            <button title="Expériences" data-text="Expériences">
-              <i class="fas fa-briefcase"></i>
-            </button>
-          </a>
-          <a href="#competences-section">
-            <button title="Compétences" data-text="Compétences">
-              <i class="fas fa-lightbulb"></i>
-            </button>
-          </a>
-          <a href="#info-section">
-            <button title="Infos" data-text="Infos">
-              <i class="fas fa-info-circle"></i>
-            </button>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <section class="formation-section" id="formation-section">
-      <h2>Formation & Diplômes</h2>
-      <div class="formation-wrapper">
-        <div class="timeline-container">
-          <div class="timeline-arrow"></div>
-          
-          <div class="timeline-item" data-formation="bac">
-            <div class="timeline-dot"></div>
-            <span class="timeline-label">Baccalauréat</span>
-          </div>
-          
-          <div class="timeline-item" data-formation="dut">
-            <div class="timeline-dot"></div>
-            <span class="timeline-label">DUT Réseau et Télécommunications</span>
-          </div>
-          
-          <div class="timeline-item" data-formation="but">
-            <div class="timeline-dot"></div>
-            <span class="timeline-label">BUT Réseau et Télécommunications</span>
-          </div>
-          
-          <div class="timeline-item" data-formation="avenir">
-            <div class="timeline-dot"></div>
-            <span class="timeline-label">À venir</span>
-          </div>
+        <!-- Photo de profil circulaire -->
+        <div class="photo">
+            <img src="image/image.png" alt="Photo de profil" />
         </div>
         
-        <aside class="formation-details">
-          <h3>Détails</h3>
-          <div class="detail-content" id="detail-bac">
-            <h4>Baccalauréat</h4>
-            <p>Description du baccalauréat, année d'obtention, mention...</p>
-          </div>
-          <div class="detail-content" id="detail-dut">
-            <h4>DUT Réseau et Télécommunications</h4>
-            <p>Description du DUT, compétences acquises...</p>
-          </div>
-          <div class="detail-content" id="detail-but">
-            <h4>BUT Réseau et Télécommunications</h4>
-            <p>Description du BUT, spécialisation...</p>
-          </div>
-          <div class="detail-content" id="detail-avenir">
-            <h4>À venir</h4>
-            <p>Projets futurs, master envisagé, domaine d'expertise...</p>
-          </div>
-          <p class="placeholder">
-            Survolez une formation pour voir les détails
-          </p>
-        </aside>
-      </div>
+        <!-- Section de texte avec boîte de présentation -->
+        <div class="text-section">
+            <div class="text-box">
+                <h1>Louis Erb</h1>
+                <p class="subtitle">Étudiant en 1re année de BUT Réseaux et Télécommunications</p>
+                <p>Je m'appelle Louis Erb, j'ai 18 ans et je suis né le 31 octobre 2007. Actuellement en première année de BUT Réseaux et Télécommunications, j'ai acquis des compétences en administration réseau, développement web et cybersécurité. Je fais partie d'un ciné-club et j'ai aussi suivi une formation pratique à 42, ce qui m'a permis de développer l'autonomie, la collaboration et la résolution de problèmes complexes.</p>
+            </div>
+            
+            <!-- Boutons de navigation circulaires -->
+            <div class="buttons-container">
+                <a href="#formation">
+                    <button class="nav-button" data-text="Formation">F</button>
+                </a>
+                <a href="#experiences">
+                    <button class="nav-button" data-text="Expériences">E</button>
+                </a>
+                <a href="#competences">
+                    <button class="nav-button" data-text="Compétences">C</button>
+                </a>
+                <a href="#contact">
+                    <button class="nav-button" data-text="Contact">I</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formation & Diplômes -->
+    <section id="formation" class="section-formation">
+        <div class="container">
+            <h2>Formation & Diplômes</h2>
+            <div class="formation-wrapper">
+                <!-- Timeline -->
+                <div class="timeline-container">
+                    <div class="timeline-arrow"></div>
+                    
+                    <div class="timeline-item" data-formation="bac">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-label">Baccalauréat</span>
+                    </div>
+                    
+                    <div class="timeline-item" data-formation="dut">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-label">DUT Réseau et Télécommunications</span>
+                    </div>
+                    
+                    <div class="timeline-item" data-formation="but">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-label">BUT Réseau et Télécommunications</span>
+                    </div>
+                    
+                    <div class="timeline-item" data-formation="avenir">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-label">À venir</span>
+                    </div>
+                </div>
+                
+                <!-- Détails -->
+                <aside class="formation-details">
+                    <h3>Détails de la formation</h3>
+                    <p class="placeholder">Survolez une formation pour voir les détails...</p>
+                    
+                    <div class="detail-content" id="detail-bac">
+                        <h4>Baccalauréat Général</h4>
+                        <p class="date">Obtenu en 2025</p>
+                        <p>Baccalauréat général avec mention Bien. Spécialités : Mathématiques et Sciences de l'Ingénieur.</p>
+                        <p>Cette formation m'a permis d'acquérir les bases scientifiques nécessaires pour poursuivre mes études supérieures.</p>
+                    </div>
+                    
+                    <div class="detail-content" id="detail-dut">
+                        <h4>DUT Réseau et Télécommunications</h4>
+                        <p class="date">2020 - 2022</p>
+                        <p>Formation de deux ans à l'IUT spécialisée dans les réseaux informatiques et les télécommunications.</p>
+                        <h5>Compétences acquises :</h5>
+                        <ul>
+                            <li>Administration systèmes et réseaux</li>
+                            <li>Protocoles TCP/IP</li>
+                            <li>Développement web (HTML, CSS, PHP)</li>
+                            <li>Bases de données MySQL</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-content" id="detail-but">
+                        <h4>BUT Réseau et Télécommunications</h4>
+                        <p class="date">2025 - 2028 (en cours)</p>
+                        <p>Première année de BUT Réseaux et Télécommunications, avec une future spécialisation prévue en cybersécurité des systèmes et réseaux.</p>
+                        <h5>Modules principaux :</h5>
+                        <ul>
+                            <li>Sécurité des réseaux et systèmes</li>
+                            <li>Développement d'applications web avancées</li>
+                            <li>Virtualisation et Cloud Computing</li>
+                            <li>Gestion de projets informatiques</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-content" id="detail-avenir">
+                        <h4>Projets d'avenir</h4>
+                        <p class="date">À partir de 2025</p>
+                        <p>Après l'obtention de mon BUT, je souhaite me spécialiser davantage dans le domaine de la cybersécurité.</p>
+                        <h5>Objectifs :</h5>
+                        <ul>
+                            <li>Master en Cybersécurité</li>
+                            <li>Certifications professionnelles (CEH, OSCP)</li>
+                            <li>Expérience en pentesting et audit de sécurité</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
     </section>
-    <section class="experiences" id="experiences-section">
-      <h2>Expériences</h2>
-      <div class="experience-container">
-        <div class="experience-card large">
-          <div class="experience-content">
-            <h3>Expérience principale</h3>
-            <p class="experience-date">2023 - Présent</p>
-            <p>Description détaillée de l'expérience principale, missions, compétences développées...</p>
-          </div>
-          <div class="experience-images">
-            <img src="image/image.png" alt="Experience image 1" class="exp-img top">
-            <img src="image/image.png" alt="Experience image 2" class="exp-img middle">
-            <img src="image/image.png" alt="Experience image 3" class="exp-img bottom">
-          </div>
+
+    <!-- Expériences professionnelles -->
+    <section id="experiences" class="section-experiences">
+        <div class="container">
+            <h2>Expériences Professionnelles</h2>
+            <div class="experiences-list">
+                <!-- Grande carte en haut -->
+                <article class="experience-card large">
+                    <div class="experience-images">
+                        <img class="exp-img top" src="image/image.png" alt="Illustration expérience haut" />
+                        <img class="exp-img middle" src="image/image.png" alt="Illustration expérience milieu" />
+                        <img class="exp-img bottom" src="image/image.png" alt="Illustration expérience bas" />
+                    </div>
+                    <div class="experience-content">
+                        <h3>Job Étudiant - ARTE</h3>
+                        <p class="experience-date">Août 2025</p>
+                        <p>Travail en restauration au sein des bâtiments d’ARTE à Strasbourg pour le prestataire API. Je participais à la préparation en légumerie, à l’aide à la cafétéria, à la plonge et au nettoyage des espaces. J’ai appris à respecter strictement les règles d’hygiène et de sécurité, à organiser mon travail efficacement et à maintenir un bon rythme dans un environnement exigeant. Cette expérience m’a permis de développer ma rigueur, mon autonomie et mon sens du travail en équipe.</p>
+                    </div>
+                </article>
+
+                <!-- Deux petites cartes en dessous, côte à côte -->
+                <div class="experience-cards-row">
+                    <article class="experience-card small">
+                        <h3>Ciné-club</h3>
+                        <p class="experience-date">2023-2025</p>
+                        <p>Participation active à un ciné-club, organisation de séances, discussion et analyse de films, développement de compétences en communication et travail en groupe.</p>
+                    </article>
+                    <article class="experience-card small">
+                        <h3>Formation 42</h3>
+                        <p class="experience-date">2025</p>
+                        <p>Expérience pratique à 42, apprentissage de la programmation, collaboration sur des projets en pair-programming et développement de compétences en résolution de problèmes complexes.</p>
+                    </article>
+                </div>
+            </div>
         </div>
-        <div class="experience-cards-row">
-          <div class="experience-card small">
-            <h3>Expérience 2</h3>
-            <p class="experience-date">2022 - 2023</p>
-            <p>Description de l'expérience secondaire...</p>
-          </div>
-          <div class="experience-card small">
-            <h3>Expérience 3</h3>
-            <p class="experience-date">2021 - 2022</p>
-            <p>Description de l'expérience secondaire...</p>
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="compétences" id="competences-section">
-      <h2>Compétences</h2>
-      <div class="competences-container">
-        <div class="competence-card">
-          <div class="competence-icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
-          <h3>Compétences RT</h3>
-          <div class="competence-content">
-            <h4>Poste occupé</h4>
-            <p>Technicien réseau et télécommunications</p>
-            <h4>Responsabilités</h4>
-            <ul>
-              <li>Administration des réseaux</li>
-              <li>Configuration des équipements</li>
-              <li>Maintenance infrastructure</li>
-              <li>Sécurité réseau</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="competence-card">
-          <div class="competence-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3>Compétences Techniques</h3>
-          <div class="competence-content">
-            <ul>
-              <li>HTML / CSS / JavaScript</li>
-              <li>Python</li>
-              <li>Linux / Windows Server</li>
-              <li>Bases de données SQL</li>
-              <li>Docker / Virtualisation</li>
-              <li>Git / GitHub</li>
-            </ul>
-          </div>
+    <!-- Compétences -->
+    <section id="competences" class="section-competences">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="grid-competences">
+                <div class="competence-card">
+                    <h3>Développement Web</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>PHP & MySQL</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="competence-card">
+                    <h3>Réseaux</h3>
+                    <ul>
+                        <li>Configuration routeurs</li>
+                        <li>TCP/IP</li>
+                        <li>VPN & Firewall</li>
+                        <li>Administration Linux</li>
+                    </ul>
+                </div>
+                <div class="competence-card">
+                    <h3>Outils</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Docker</li>
+                        <li>Wireshark</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="competence-card">
-          <div class="competence-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3>Compétences Humaines</h3>
-          <div class="competence-content">
-            <ul>
-              <li>Travail en équipe</li>
-              <li>Communication</li>
-              <li>Résolution de problèmes</li>
-              <li>Autonomie</li>
-              <li>Adaptabilité</li>
-              <li>Gestion du temps</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="info" id="info-section">
-      <h2>Informations</h2>
-      <div class="info-container">
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-language"></i>
-          </div>
-          <h3>Langues</h3>
-          <ul>
-            <li><strong>Français</strong> - Langue maternelle</li>
-            <li><strong>Anglais</strong> - B2 (Intermédiaire avancé)</li>
-            <li><strong>Espagnol</strong> - A2 (Élémentaire)</li>
-          </ul>
-        </div>
 
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-running"></i>
-          </div>
-          <h3>Sports</h3>
-          <ul>
-            <li>Football - Pratique régulière</li>
-            <li>Course à pied</li>
-            <li>Natation</li>
-            <li>Cyclisme</li>
-          </ul>
+    <!-- Informations & Contact -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Informations & Contact</h2>
+            <div class="grid-infos">
+                <div class="info-card">
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Français (natif)</li>
+                        <li>Anglais (B2)</li>
+                        <li>Allemand (A2)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Loisirs</h3>
+                    <ul>
+                        <li>Informatique</li>
+                        <li>Sport</li>
+                        <li>Lecture</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Contact</h3>
+                    <p>Email : louis.erb@outlook.fr</p>
+                    <p>Tél : 06 81 61 63 05</p>
+                    <p>Âge : 18 ans</p>
+                    <p>Né le : 31/10/2007</p>
+                </div>
+            </div>
         </div>
-
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-palette"></i>
-          </div>
-          <h3>Activités Artistiques</h3>
-          <ul>
-            <li>Photographie</li>
-            <li>Design graphique</li>
-            <li>Dessin</li>
-          </ul>
-        </div>
-
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <h3>Hobbies</h3>
-          <ul>
-            <li>Jeux vidéo</li>
-            <li>Lecture (science-fiction, technologie)</li>
-            <li>Cinéma</li>
-            <li>Musique</li>
-          </ul>
-        </div>
-
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-plane"></i>
-          </div>
-          <h3>Voyages & Culture</h3>
-          <ul>
-            <li>Voyages en Europe (Espagne, Italie, Allemagne)</li>
-            <li>Visite de musées technologiques</li>
-            <li>Festivals de musique</li>
-            <li>Découverte de cuisines du monde</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="contact-section">
-        <h3>Contact</h3>
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <span>votre.email@exemple.com</span>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <span>+33 6 12 34 56 78</span>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Ville, France</span>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/votreprofil" target="_blank">LinkedIn</a>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/votreprofil" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
     </section>
-  </body>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Louis Dupont - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
 </html>
