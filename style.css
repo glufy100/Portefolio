@@ -145,14 +145,17 @@ section {
 
 .detail-page-nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: auto;
-  background-color: transparent;
-  padding: 18px 24px;
+  top: 24px;
+  left: 24px;
+  padding: 16px 24px;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 999px;
+  align-items: center;
+  background-color: rgba(36, 36, 36, 0.92);
+  border: 1px solid #2e2e2e;
   z-index: 1000;
   display: flex;
-  gap: 20px;
 }
 
 .back-link {
@@ -169,25 +172,23 @@ section {
 }
 
 .detail-page-nav .back-link {
-  background-color: #242424;
-  border: 1px solid #2e2e2e;
-  padding: 12px 18px;
-  border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
 }
 
 .nav-item {
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 0;
 }
 
 .nav-item .back-link {
-  white-space: nowrap;
+  justify-content: center;
 }
 
 .nav-submenu {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 12px);
   left: 0;
   min-width: 220px;
   background-color: #242424;
@@ -199,17 +200,18 @@ section {
   transform: translateY(-6px);
   display: flex;
   flex-direction: column;
-  margin-top: 6px;
-  padding-top: 8px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .nav-submenu::before {
   content: "";
   position: absolute;
-  top: -8px;
+  top: -12px;
   left: 0;
   right: 0;
-  height: 8px;
+  height: 12px;
+  bottom: auto;
 }
 
 .nav-submenu a {
@@ -389,10 +391,14 @@ section {
 
 #experience-cineclub {
   flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
 }
 
 #experience-42 {
   flex-direction: row;
+  gap: 20px;
+  align-items: center;
 }
 
 /* Optimisation des images pour expériences détaillées */
@@ -401,16 +407,17 @@ section {
   position: static;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: auto;
-  height: auto;
+  gap: 12px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 #experience-cineclub .exp-img,
 #experience-42 .exp-img {
   position: static;
-  width: 253px;
-  height: 161px;
+  width: 300px;
+  height: 191px;
   object-fit: cover;
   top: auto;
   right: auto;
