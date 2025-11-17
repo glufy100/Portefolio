@@ -8,14 +8,32 @@
 </head>
 <body>
     <nav class="detail-page-nav">
-        <a class="back-link" href="index.html">← Retour au portfolio</a>
+        <div class="nav-item">
+            <a class="back-link" href="index.html">Accueil</a>
+            <div class="nav-submenu">
+                <a href="index.html#formation">Formation & diplômes</a>
+                <a href="index.html#experiences">Aperçu expériences</a>
+                <a href="index.html#competences">Compétences & contact</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a class="back-link" href="experiences.html">Expériences</a>
+            <div class="nav-submenu">
+                <a href="experiences.html#experience-api-arte">Job API</a>
+                <a href="experiences.html#experience-projets-persos">Projets personnels</a>
+                <a href="experiences.html#experience-cineclub">Ciné-club</a>
+                <a href="experiences.html#experience-42">Piscine 42</a>
+                <a href="formations.html#but2">Parcours Dev&nbsp;Cloud</a>
+                <a href="formations.html#objectifs">Objectifs futurs</a>
+            </div>
+        </div>
     </nav>
     <section class="section-formation detail-page with-fixed-nav">
         <div class="container">
             <div class="experiences-list">
                 <article class="experience-card experience-detail" id="bac">
                     <h2>Baccalauréat STI2D</h2>
-                    <p class="experience-date">2022 - 2024 · Lycée Heinrich Nessel (Haguenau)</p>
+                    <p class="experience-date">2021 - 2025 · Lycée Heinrich Nessel (Haguenau)</p>
                     <p class="detail-intro">Baccalauréat STI2D obtenu avec spécialité Systèmes d’Information et Numérique. Formation centrée sur l’électronique, la domotique et la gestion de projet technique.</p>
                     <div class="detail-section">
                         <h3>Compétences développées</h3>
@@ -32,15 +50,11 @@
                             <li>Déploiement d’un réseau de capteurs relié à une interface web.</li>
                         </ul>
                     </div>
-                    <div class="detail-section">
-                        <h3>En savoir plus</h3>
-                        <a class="card-link" href="https://lycee-heinrich-nessel.fr/" target="_blank" rel="noreferrer">Site du lycée Heinrich Nessel</a>
-                    </div>
                 </article>
 
                 <article class="experience-card experience-detail" id="pix">
                     <h2>Certification PIX</h2>
-                    <p class="experience-date">2024 · Compétences numériques certifiées</p>
+                    <p class="experience-date">2023 · Compétences numériques certifiées</p>
                     <p class="detail-intro">Validation officielle des compétences numériques transverses, indispensable pour des études en réseaux et cybersécurité.</p>
                     <div class="detail-section">
                         <h3>Domaines maîtrisés</h3>
@@ -54,10 +68,6 @@
                     <div class="detail-section">
                         <h3>Démarche</h3>
                         <p>Auto-formation régulière sur la plateforme PIX, suivie d’une session de certification officielle organisée au lycée, avec des mises en situation couvrant l’ensemble des compétences.</p>
-                    </div>
-                    <div class="detail-section">
-                        <h3>En savoir plus</h3>
-                        <a class="card-link" href="https://pix.fr" target="_blank" rel="noreferrer">Plateforme PIX</a>
                     </div>
                 </article>
 
@@ -77,7 +87,7 @@
 
                 <article class="experience-card experience-detail" id="but1">
                     <h2>BUT Réseaux & Télécoms – 1re année</h2>
-                    <p class="experience-date">Depuis 2025 · IUT de Colmar</p>
+                    <p class="experience-date">Depuis septembre 2025 · IUT de Colmar</p>
                     <p class="detail-intro">Immersion dans les fondamentaux réseaux et systèmes, avec un temps fort sur la cybersécurité et le développement web.</p>
                     <div class="detail-section">
                         <h3>Unités d’enseignement</h3>
@@ -95,29 +105,39 @@
                             <li>SAÉ 1.03 : mise en place d’un réseau local sécurisé et supervision avec outils libres.</li>
                         </ul>
                     </div>
-                    <div class="detail-section">
-                        <h3>Ressources</h3>
-                        <a class="card-link" href="https://www.iutcolmar.uha.fr/" target="_blank" rel="noreferrer">Découvrir l’IUT de Colmar</a>
-                    </div>
                 </article>
 
                 <article class="experience-card experience-detail" id="but2">
-                    <h2>Parcours cybersécurité (BUT 2 & 3)</h2>
+                    <h2>Parcours Dev Cloud (BUT 2 &amp; 3)</h2>
                     <p class="experience-date">2026 - 2028 (prévision)</p>
-                    <p class="detail-intro">Projection vers la spécialisation cybersécurité des systèmes et réseaux proposée au sein du département RT.</p>
+                    <p class="detail-intro">Projection vers l’option Dev Cloud du département RT, axée sur l’automatisation, l’orchestration et la supervision des services applicatifs.</p>
                     <div class="detail-section">
                         <h3>Compétences visées</h3>
                         <ul>
-                            <li>Détection, analyse et réponse aux incidents de sécurité.</li>
-                            <li>Automatisation des déploiements sécurisés (Ansible, Python).</li>
-                            <li>Conception d’architectures résilientes et segmentation avancée.</li>
+                            <li>CI/CD, conteneurs, Infrastructure as Code</li>
+                            <li>Gestion de plateformes cloud hybrides</li>
+                            <li>Observabilité, SRE et optimisation des performances</li>
                         </ul>
                     </div>
                     <div class="detail-section">
                         <h3>Projets envisagés</h3>
                         <ul>
-                            <li>Lab de tests d’intrusion pour sensibiliser aux menaces.</li>
-                            <li>Participation à des CTF et hackathons de cybersécurité.</li>
+                            <li>Conception d’environnements de déploiement automatisés</li>
+                            <li>Supervision temps réel pour des services média</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="experience-card experience-detail" id="objectifs">
+                    <h2>Objectifs futurs</h2>
+                    <p class="experience-date">Après 2028</p>
+                    <p class="detail-intro">Viser un poste d’ingénieur Dev&nbsp;Cloud/DevOps dans l’audiovisuel ou les médias, en capitalisant sur l’expertise acquise en BUT et en maîtrisant la synchronisation PTP pour les flux broadcast.</p>
+                    <div class="detail-section">
+                        <h3>Prochains jalons</h3>
+                        <ul>
+                            <li>Alternance en équipe Cloud / plateforme dédiée au signal audiovisuel</li>
+                            <li>Certifications (AWS, Azure, Kubernetes, etc.) et spécialisation PTP</li>
+                            <li>Projets personnels mêlant automatisation, multimédia et précision temporelle</li>
                         </ul>
                     </div>
                 </article>
@@ -128,6 +148,15 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Louis Erb - Tous droits réservés</p>
+            <h3>Liens utiles</h3>
+            <div>
+                <p>
+                    <a href="https://www.arte.tv/fr/" target="_blank" rel="noreferrer">ARTE   ---   </a>
+                    <a href="https://www.api-restauration.com/" target="_blank" rel="noreferrer">API Restauration   ---   </a>
+                    <a href="https://maps.google.com/?q=ARTE,+67000+Strasbourg" target="_blank" rel="noreferrer">Localiser ARTE Strasbourg   ---   </a>
+                    <a href="https://www.42mulhouse.fr/" target="_blank" rel="noreferrer">École 42 Mulhouse</a>
+                </p>
+            </div>
         </div>
     </footer>
 </body>
