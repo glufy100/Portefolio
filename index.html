@@ -15,9 +15,8 @@
             <a class="back-link" href="experiences.html">Expériences</a>
             <div class="nav-submenu">
                 <a href="experiences.html#experience-api-arte">Job Étudiant</a>
-                <a href="experiences.html#experience-projets-persos">Projets personnels</a>
-                <a href="experiences.html#experience-cineclub">Ciné-club</a>
                 <a href="experiences.html#experience-42">Piscine école 42</a>
+                <a href="experiences.html#experience-projets-persos">Projets personnels</a>
             </div>
         </div>
         <div class="nav-item">
@@ -32,7 +31,11 @@
             </div>
         </div>
         <div class="nav-item">
-            <a class="back-link" href="contact.html">Contact</a>
+            <a class="back-link" href="loisirs.html">Loisirs</a>
+            <div class="nav-submenu">
+                <a href="loisirs.html#experience-cineclub">Ciné-club</a>
+                <a href="loisirs.html#autre-loisirs">Autres loisirs</a>
+            </div>
         </div>
     </nav>
     <!-- Présentation -->
@@ -180,24 +183,27 @@
                         <a class="accent-link" href="experiences.html#experience-api-arte">En savoir plus</a>
                     </div>
                 </article>
-
-                <!-- Deux petites cartes en dessous, côte à côte -->
-                <div class="experience-cards-row">
-                    <article class="experience-card small">
-                        <h3>Ciné-club</h3>
-                        <p class="experience-date">2023-2025</p>
-                        <p><strong>Expérience personnelle</strong></p>
-                        <p>Participation active à un ciné-club, organisation de séances, discussion et analyse de films, développement de compétences en communication et travail en groupe.</p>
-                        <a class="accent-link" href="experiences.html#experience-cineclub">En savoir plus</a>
-                    </article>
-                    <article class="experience-card small">
+                <!-- Carte large pour Piscine 42 avec images à droite (ordre HTML: contenu puis images) -->
+                <article class="experience-card large">
+                    <div class="experience-content">
                         <h3>Piscine 42</h3>
                         <p class="experience-date">Juillet 2025</p>
                         <p><strong>Expérience personnelle</strong></p>
-                        <p>Expérience pratique à 42, apprentissage de la programmation, collaboration sur des projets en pair-programming et développement de compétences en résolution de problèmes complexes.</p>
+                        <p>Un mois intensif (Piscine) à l’école 42 : exercices progressifs en C, lecture et débogage de code, entraide en peer‑learning. Cette immersion a renforcé ma logique, mon autonomie et ma persévérance.</p>
+                        <p><strong>Compétences renforcées :</strong></p>
+                        <ul>
+                            <li>Programmation C (pointeurs, chaînes)</li>
+                            <li>Débogage rapide</li>
+                            <li>Collaboration (peer‑learning)</li>
+                        </ul>
                         <a class="accent-link" href="experiences.html#experience-42">En savoir plus</a>
-                    </article>
-                </div>
+                    </div>
+                    <div class="experience-images">
+                        <img class="exp-img top" src="image/421.png" alt="Piscine 42 - exercice" />
+                        <img class="exp-img middle" src="image/422.jpeg" alt="Piscine 42 - collaboration" />
+                        <img class="exp-img bottom" src="image/423.JPG" alt="Piscine 42 - projet" />
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -243,31 +249,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-contact" id="contact">
-                    <h2>Informations & Contact</h2>
-                    <div class="grid-infos">
-                        <div class="info-card">
-                            <h3>Langues</h3>
-                            <ul>
-                                <li>Français</li>
-                                <li>Anglais (B2)</li>
-                                <li>Allemand (A2)</li>
-                            </ul>
-                        </div>
-                        <div class="info-card">
-                            <h3><a class ="accent-link" href="contact.html#passions">Passions</a></h3>
-                            <ul>
-                                <li>Marche à pieds</li>
-                                <li>Bûcheronnage</li>
-                                <li>Jeux vidéo</li>
-                            </ul>
-                        </div>
-                        <div class="info-card">
-                            <h3>Contact</h3>
-                            <p>Email : louis.erb@outlook.fr</p>
-                            <p>Tél : 06 81 61 63 05</p>
-                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loisirs -->
+    <section id="experiences" class="section-experiences">
+        <div class="container">
+            <h2>Loisir</h2>
+            <div class="experiences-list">
+                <!-- Grande carte en haut -->
+                <article class="experience-card large">
+                    <div class="experience-images">
+                        <img class="exp-img top" src="image/Forêt1.jpg" alt="Illustration expérience haut" />
+                        <img class="exp-img middle" src="image/Forêt2.jpg" alt="Illustration expérience milieu" />
+                        <img class="exp-img bottom" src="image/Forêt3.jpg" alt="Illustration expérience bas" />
                     </div>
+                    <div class="experience-content">
+                        <h3>Le bûcheronnage</h3>
+                        <p>Depuis plus de trois ans, je participe chaque année à la préparation de plus de 100 stères de bois avec un ami et sa famille. Nous faisons absolument tout nous-mêmes : couper, fendre, ranger et gérer le matériel, sans aucune entreprise pour nous aider.</p>
+                        <p>Cette expérience m'a permis de développer de vraies compétences : autonomie, organisation, travail d'équipe, utilisation d'outils en toute sécurité et une bonne endurance physique.</p>
+                        <p>C'est une activité que j'apprécie particulièrement, autant pour l'aspect manuel que pour le travail en extérieur.</p>
+                    </div>
+                </article>
+
+                <!-- Deux petites cartes en dessous, côte à côte -->
+                <div class="experience-cards-row">
+                    <article class="experience-card small">
+                        <h3>Ciné-club</h3>
+                        <p class="experience-date">2023-2025</p>
+                        <p><strong>Expérience personnelle</strong></p>
+                        <p>Participation active à un ciné-club, organisation de séances, discussion et analyse de films, développement de compétences en communication et travail en groupe.</p>
+                        <a class="accent-link" href="loisir.html#experience-cineclub">En savoir plus</a>
+                    </article>
+                    <article class="experience-card small">
+                        <h3>Autre Loisirs</h3>
+                        <ul>
+                            <li>Randonnée</li>
+                            <li>jeux vidéo</li>
+                            <li>Course à pied</li>
+                            <li>L'automobile</li>
+                        </ul>
+                        <a class="accent-link" href="experiences.html#experience-42">En savoir plus</a>
+                    </article>
                 </div>
             </div>
         </div>
@@ -282,7 +306,6 @@
                 <p>
                     <a href="https://www.arte.tv/fr/" target="_blank" rel="noreferrer">ARTE   ---   </a>
                     <a href="https://www.api-restauration.com/" target="_blank" rel="noreferrer">API Restauration   ---   </a>
-                    <a href="https://maps.google.com/?q=ARTE,+67000+Strasbourg" target="_blank" rel="noreferrer">Localiser ARTE Strasbourg   ---   </a>
                     <a href="https://www.42mulhouse.fr/" target="_blank" rel="noreferrer">École 42 Mulhouse</a>
                 </p>
             </div>

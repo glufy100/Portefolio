@@ -146,7 +146,7 @@ section {
 .detail-page-nav {
   position: fixed;
   top: 24px;
-  left: 24px;
+  left: 80px;
   padding: 16px 24px;
   flex-direction: row;
   gap: 16px;
