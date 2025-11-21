@@ -711,18 +711,44 @@ footer {
   gap: 15px;
   height: auto;
   width: 300px;
+  flex-shrink: 0; /* Empêche le rétrécissement inattendu */
 }
 
 #piscine-42-card .exp-img {
   position: static;
   width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: contain; /* Assure que l'image est entièrement visible */
   transform: none;
   border: 1px solid var(--border-color);
+  margin: 0; /* Évite les décalages */
 }
 
 #piscine-42-card .exp-img:hover {
   transform: scale(1.02);
   z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .experience-card.large {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .experience-card.large .experience-images {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
+
+  #piscine-42-card .experience-images {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0;
+  }
+  
+  .experience-content {
+    width: 100%;
+  }
 }
