@@ -100,18 +100,7 @@ section {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.contact-card h3 {
-  font-size: 1rem;
-  margin-bottom: 6px;
-}
 
-.contact-card p {
-  font-size: 0.95rem;
-}
-
-.contact-card strong {
-  color: #111111;
-}
 
 .text-box {
   background-color: #ffffff;
@@ -616,13 +605,15 @@ footer {
   gap: 8px;
 }
 
-.day-plans {
+.day-plans,
+.skills-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
-.day-card {
+.day-card,
+.skill-column {
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
   padding: 24px 28px;
@@ -633,7 +624,8 @@ footer {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-.day-card ul {
+.day-card ul,
+.skill-column ul {
   list-style: disc;
   margin-left: 18px;
   display: flex;
@@ -648,30 +640,7 @@ footer {
   border-radius: 18px;
 }
 
-.skills-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
 
-.skill-column {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  padding: 24px 28px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-.skill-column ul {
-  list-style: disc;
-  margin-left: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
 
 .detail-conclusion {
   margin-top: 10px;
@@ -715,7 +684,7 @@ footer {
   height: auto;
   object-fit: contain;
   transform: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid #e5e7eb;
   margin: 0;
 }
 
