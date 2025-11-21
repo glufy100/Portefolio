@@ -703,3 +703,26 @@ footer {
 .accent-link:focus {
   color: #0080ff;
 }
+
+/* Piscine 42 specific styles */
+#piscine-42-card .experience-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: auto;
+  width: 300px;
+}
+
+#piscine-42-card .exp-img {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: none;
+  border: 1px solid var(--border-color);
+}
+
+#piscine-42-card .exp-img:hover {
+  transform: scale(1.02);
+  z-index: 1;
+}
