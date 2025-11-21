@@ -227,7 +227,7 @@ section {
 .formation-wrapper {
   display: grid;
   gap: 60px;
-  grid-template-columns: minmax(0, 1.4fr) 500px;
+  grid-template-columns: 1fr 400px;
 }
 
 .timeline-container {
@@ -236,6 +236,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  grid-column: 2;
 }
 
 .timeline-arrow {
@@ -291,10 +292,14 @@ section {
   overflow-y: auto;
   height: 480px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 #formation .formation-details {
-  margin-left: -200px;
+  margin: 0;
 }
 
 .formation-details h3 {
@@ -704,51 +709,26 @@ footer {
   color: #0080ff;
 }
 
-/* Piscine 42 specific styles */
 #piscine-42-card .experience-images {
   display: flex;
   flex-direction: column;
   gap: 15px;
   height: auto;
   width: 300px;
-  flex-shrink: 0; /* Empêche le rétrécissement inattendu */
+  flex-shrink: 0;
 }
 
 #piscine-42-card .exp-img {
   position: static;
   width: 100%;
   height: auto;
-  object-fit: contain; /* Assure que l'image est entièrement visible */
+  object-fit: contain;
   transform: none;
   border: 1px solid var(--border-color);
-  margin: 0; /* Évite les décalages */
+  margin: 0;
 }
 
 #piscine-42-card .exp-img:hover {
   transform: scale(1.02);
   z-index: 1;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .experience-card.large {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .experience-card.large .experience-images {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
-
-  #piscine-42-card .experience-images {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
-  
-  .experience-content {
-    width: 100%;
-  }
 }
