@@ -400,7 +400,6 @@ section {
   align-items: center;
 }
 
-/* Optimisation des images pour expériences détaillées */
 #experience-cineclub .experience-images,
 #experience-42 .experience-images {
   position: static;
