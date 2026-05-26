@@ -54,20 +54,12 @@
 
                     <div class="project-showcase">
                         <div class="project-showcase-content">
-                            <p class="detail-intro">
-                                Dans le cadre de la SAÉ 1.05, nous avons développé un outil de reporting permettant
-                                d’analyser l’espace disque d’un ordinateur afin de localiser rapidement les fichiers les
-                                plus volumineux présents dans une arborescence donnée.
-                            </p>
+                            <p class="detail-intro">Développement d’un outil multiplateforme (Windows/Mac/Linux) pour analyser l’espace disque, visualiser les plus gros fichiers et faciliter le nettoyage sécurisé.</p>
 
-                            <div class="detail-highlight">
-                                <strong>Présentation du projet :</strong>
-                                <p>
-                                    Ce projet répond à une problématique fréquente en administration système : le manque
-                                    d’espace de stockage sur les postes utilisateurs pouvant empêcher certaines mises à jour
-                                    ou l’installation de nouveaux logiciels.
-                                </p>
-                            </div>
+                                    <div class="detail-highlight">
+                                        <strong>Résumé :</strong>
+                                        <p>Application d’administration facilitant l’identification des fichiers volumineux et la génération de scripts de nettoyage.</p>
+                                    </div>
                         </div>
 
                         <figure class="project-visual">
@@ -82,91 +74,41 @@
                     </div>
 
                     <div class="detail-section">
-                        <h3>Présentation du projet</h3>
-                        <p>
-                            L’objectif principal du projet est de faciliter la maintenance d’un parc informatique en
-                            automatisant la recherche des fichiers occupant le plus d’espace disque. L’application est
-                            compatible Windows, MacOS et Linux.
-                        </p>
+                        <h3>Fonctionnalité principale</h3>
+                        <p>Analyse récursive de l’arborescence, identification et classement des fichiers par taille, export des résultats et visualisation graphique.</p>
                     </div>
 
                     <div class="detail-section">
-                        <h3>Fonctionnement général</h3>
+                        <h3>Flux de traitement</h3>
                         <ol>
-                            <li>Un premier script Python permet à l’utilisateur de sélectionner un répertoire de base grâce à une interface graphique PyQt5.</li>
-                            <li>Un second script analyse récursivement tous les fichiers contenus dans ce répertoire et ses sous-dossiers.</li>
-                            <li>Les fichiers sont triés par taille décroissante afin de conserver uniquement les plus volumineux.</li>
-                            <li>Les résultats sont enregistrés dans un fichier JSON.</li>
-                            <li>Un troisième script génère une interface graphique affichant les données sous forme de camembert accompagné de légendes interactives.</li>
-                            <li>L’utilisateur peut sélectionner certains fichiers grâce à des cases à cocher afin de générer automatiquement un script PowerShell de suppression.</li>
+                            <li>Sélection du répertoire via interface PyQt5</li>
+                            <li>Analyse récursive et collecte des métadonnées</li>
+                            <li>Tri et filtrage des fichiers volumineux</li>
+                            <li>Export JSON et génération de visualisation (camembert)</li>
+                            <li>Génération optionnelle d’un script PowerShell de nettoyage</li>
                         </ol>
                     </div>
 
                     <div class="detail-section">
-                        <h3>Technologies utilisées</h3>
+                        <h3>Technologies</h3>
                         <ul>
-                            <li>PyQt5 pour l’interface graphique</li>
-                            <li>PyQtChart pour la création du graphique circulaire</li>
-                            <li>pathlib pour la gestion multiplateforme des chemins de fichiers</li>
-                            <li>json pour le stockage des données</li>
-                            <li>PowerShell pour l’automatisation et la suppression des fichiers</li>
+                            <li>Python (pathlib, json)</li>
+                            <li>PyQt5 / PyQtChart pour l’interface et les graphiques</li>
+                            <li>PowerShell pour la génération de scripts de suppression</li>
                         </ul>
                     </div>
 
                     <div class="detail-section">
-                        <h3>Aspects techniques</h3>
-                        <p>
-                            Chaque fichier analysé est stocké sous la forme :
-                        </p>
-                        <p><strong>[chemin_complet_du_fichier, taille_en_octets]</strong></p>
-                        <p>
-                            Les fichiers sont ensuite triés grâce à la fonction <strong>sorted()</strong> associée à une
-                            fonction <strong>lambda</strong>. Le programme conserve uniquement les 100 plus gros fichiers
-                            dépassant une taille minimale définie.
-                        </p>
-                        <p>
-                            Le projet a également nécessité une attention particulière concernant la compatibilité entre
-                            les systèmes d’exploitation, notamment pour la gestion des chemins Windows utilisant les
-                            antislashs (\\).
-                        </p>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3>Résultat final</h3>
-                        <p>
-                            Le résultat obtenu est une application graphique capable de visualiser rapidement les fichiers
-                            occupant le plus d’espace disque. Le camembert permet d’identifier facilement les fichiers
-                            dominants tandis que les légendes détaillent leur emplacement et leur taille.
-                        </p>
-                        <p>
-                            L’utilisateur peut ensuite générer un script PowerShell sécurisé permettant de supprimer
-                            uniquement les fichiers sélectionnés après double confirmation.
-                        </p>
-                    </div>
-
-                    <div class="detail-section">
-                        <h3>Conclusion</h3>
-                        <p>
-                            Cette SAÉ nous a permis de mettre en pratique la programmation Python, la programmation
-                            orientée objet, la manipulation de fichiers, la création d’interfaces graphiques, la gestion
-                            de données JSON, ainsi que l’automatisation système avec PowerShell.
-                        </p>
-                        <p>
-                            Ce projet se rapproche d’un véritable outil utilisé en administration système et montre comment
-                            Python peut être utilisé pour créer des applications complètes mêlant analyse de données,
-                            visualisation et automatisation.
-                        </p>
+                        <h3>Résultats</h3>
+                        <p>Application graphique fonctionnelle permettant d’identifier rapidement les éléments qui consomment le plus d’espace et d’automatiser un nettoyage sécurisé.</p>
                     </div>
 
                     <div class="detail-section">
                         <h3>Compétences mobilisées</h3>
                         <ul>
-                            <li>Programmation Python</li>
-                            <li>Programmation orientée objet</li>
-                            <li>Manipulation de fichiers</li>
-                            <li>Création d’interfaces graphiques</li>
-                            <li>Gestion de données JSON</li>
-                            <li>Automatisation système avec PowerShell</li>
+                            <li>Programmation Python et conception d’interface</li>
+                            <li>Traitement de fichiers et gestion multiplateforme</li>
+                            <li>Visualisation de données et automatisation</li>
                         </ul>
                     </div>
 

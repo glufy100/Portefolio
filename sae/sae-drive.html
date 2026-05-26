@@ -54,21 +54,12 @@
 
                     <div class="project-showcase">
                         <div class="project-showcase-content">
-                            <p class="detail-intro">
-                                Dans le cadre de cette SAÉ liée à la compétence RT3 informatique, notre projet consiste à concevoir
-                                et déployer une application web permettant la gestion complète d’un service de Drive.
-                                L’objectif est de développer une solution permettant de stocker, consulter, modifier et manipuler
-                                des données à travers une interface web conviviale accessible depuis un navigateur.
-                            </p>
+                            <p class="detail-intro">Projet de groupe RT3 : conception, développement et déploiement d’une application web de gestion de Drive, intégrant back‑end, base de données et interface utilisateur.</p>
 
-                            <div class="detail-highlight">
-                                <strong>Présentation du projet :</strong>
-                                <p>
-                                    Le projet doit être réalisé en groupe de trois étudiants et s’appuie sur plusieurs compétences
-                                    étudiées durant la formation, notamment la programmation, les technologies web, les bases de données,
-                                    les systèmes Linux et le travail collaboratif.
-                                </p>
-                            </div>
+                                    <div class="detail-highlight">
+                                        <strong>En bref :</strong>
+                                        <p>Solution complète pour gérer produits, clients et commandes, avec import de données et génération automatique de fiches.</p>
+                                    </div>
                         </div>
 
                         <figure class="project-visual">
@@ -83,90 +74,33 @@
                     </div>
 
                     <div class="detail-section">
-                        <h3>Objectifs du projet</h3>
-                        <p>
-                            Le projet a pour objectif principal de développer une plateforme web de gestion de commandes de Drive
-                            permettant plusieurs opérations essentielles.
-                        </p>
+                        <h3>Objectifs</h3>
                         <ul>
-                            <li>Gérer les produits</li>
-                            <li>Gérer les catégories</li>
-                            <li>Gérer les clients</li>
-                            <li>Gérer les commandes</li>
-                            <li>Ajouter des produits via un fichier</li>
-                            <li>Générer une fiche de commande avec calcul automatique du coût total</li>
+                            <li>Mettre en place un CRUD complet pour produits, clients et commandes</li>
+                            <li>Importer catalogue produit depuis un fichier</li>
+                            <li>Générer automatiquement une fiche de commande et calculer le total</li>
+                            <li>Déployer l’application sur une VM Linux</li>
                         </ul>
-                        <p>
-                            L’application doit également implémenter un système CRUD complet pour chaque type de données.
-                        </p>
                     </div>
 
                     <div class="detail-section">
-                        <h3>Fonctionnement de l’application</h3>
-                        <p>
-                            Le site web permet aux utilisateurs d’ajouter de nouveaux clients, de consulter les produits disponibles,
-                            de créer des commandes, d’ajouter des produits à une commande avec quantité et de générer automatiquement
-                            une fiche récapitulative.
-                        </p>
-                        <p>
-                            Chaque commande est associée à un client et contient plusieurs produits avec une quantité spécifique.
-                        </p>
+                        <h3>Fonctionnement</h3>
+                        <p>Interface web pour gérer catalogue et clients, créer des commandes multi‑produits, et générer des fiches récapitulatives exportables.</p>
                     </div>
 
                     <div class="detail-section">
                         <h3>Base de données</h3>
-                        <p>
-                            Le projet repose sur une base de données relationnelle contenant plusieurs tables :
-                        </p>
-                        <ul>
-                            <li>Catégories : nom et description des catégories</li>
-                            <li>Produits : nom, prix, marque, photo, date de péremption</li>
-                            <li>Clients : informations des clients</li>
-                            <li>Commandes : informations des commandes</li>
-                            <li>Produits_Commandes : association produits / commandes avec quantité</li>
-                        </ul>
-                        <p>
-                            Les relations entre les tables permettent une gestion cohérente des données et facilitent les requêtes SQL.
-                        </p>
+                        <p>Schéma relationnel simple : tables pour catégories, produits, clients, commandes et association produits‑commandes (quantités, prix).</p>
                     </div>
 
                     <div class="detail-section">
-                        <h3>Technologies utilisées</h3>
-                        <div class="day-plans">
-                            <div class="day-card">
-                                <h4>Développement Web</h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>PHP</li>
-                                </ul>
-                            </div>
-                            <div class="day-card">
-                                <h4>Base de données</h4>
-                                <ul>
-                                    <li>MySQL / MariaDB</li>
-                                </ul>
-                            </div>
-                            <div class="day-card">
-                                <h4>Hébergement et système</h4>
-                                <ul>
-                                    <li>Machine virtuelle Linux</li>
-                                    <li>Apache2</li>
-                                    <li>PHPMyAdmin</li>
-                                    <li>Serveur SQL</li>
-                                </ul>
-                            </div>
-                            <div class="day-card">
-                                <h4>Outils collaboratifs</h4>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>GitHub</li>
-                                    <li>Diagramme de Gantt</li>
-                                    <li>Documentation collaborative</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h3>Technologies et déploiement</h3>
+                        <ul>
+                            <li>Front : HTML / CSS / JavaScript</li>
+                            <li>Back : PHP + MySQL (MariaDB)</li>
+                            <li>Serveur : VM Linux (Apache)</li>
+                            <li>Outils : Git, GitHub, documentation et gestion de projet</li>
+                        </ul>
                     </div>
 
                     <div class="detail-section">
@@ -197,14 +131,12 @@
                     </div>
 
                     <div class="detail-section">
-                        <h3>Difficultés rencontrées</h3>
+                        <h3>Enjeux et solutions</h3>
                         <ul>
-                            <li>Gestion des relations entre les tables SQL</li>
-                            <li>Sécurisation des formulaires web</li>
-                            <li>Import de fichiers produits</li>
-                            <li>Configuration du serveur Linux</li>
-                            <li>Déploiement des services web</li>
-                            <li>Gestion collaborative du code avec Git</li>
+                            <li>Sécurisation des formulaires et validation côté serveur</li>
+                            <li>Conception des relations SQL et intégrité des données</li>
+                            <li>Automatisation de l’import produit et tests de charge</li>
+                            <li>Déploiement et configuration de la VM Linux</li>
                         </ul>
                     </div>
 
@@ -219,15 +151,7 @@
 
                     <div class="detail-section">
                         <h3>Conclusion</h3>
-                        <p>
-                            Cette SAÉ permet de mettre en pratique plusieurs compétences importantes du domaine informatique :
-                            développement web, programmation, administration Linux, gestion de bases de données,
-                            architecture client / serveur, gestion de projet et travail collaboratif.
-                        </p>
-                        <p>
-                            Ce projet se rapproche d’une application professionnelle réelle et constitue une première expérience complète
-                            de développement et de déploiement d’un service web.
-                        </p>
+                        <p>Projet complet appliquant des compétences de développement web, administration et gestion de données ; expérience proche d’un cas réel de production.</p>
                     </div>
 
                     <div class="section-center">
