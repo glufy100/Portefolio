@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>SAÉ 1.05 - Outil de reporting des gros fichiers</title>
+</head>
+<body>
+    <nav class="detail-page-nav">
+        <div class="nav-item">
+            <a class="back-link" href="../index.html">Accueil</a>
+        </div>
+        <div class="nav-item">
+            <a class="back-link" href="../experiences.html">Expériences</a>
+            <div class="nav-submenu">
+                <a href="../experiences.html#experience-api-arte">Job Étudiant</a>
+                <a href="../experiences.html#experience-42">Piscine école 42</a>
+                <a href="../experiences.html#experience-projets-persos">Projets personnels</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a class="back-link" href="../formations.html">Formations</a>
+            <div class="nav-submenu">
+                <a href="../formations.html#bac">Bac STI2D</a>
+                <a href="../formations.html#autoformation">Autoformation</a>
+                <a href="../formations.html#but1">BUT RT 1</a>
+                <a href="../formations.html#but2">Parcours Dev&nbsp;Cloud</a>
+                <a href="../formations.html#objectifs">Objectifs futurs</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a class="back-link" href="../certification.html">Certifications</a>
+            <div class="nav-submenu">
+                <a href="../certification.html#pix">Certification PIX</a>
+                <a href="../certification.html#desert-storme">Desert Storme</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a class="back-link" href="../loisirs.html">Loisirs</a>
+            <div class="nav-submenu">
+                <a href="../loisirs.html#experience-cineclub">Ciné-club</a>
+                <a href="../loisirs.html#autre-loisirs">Autres loisirs</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-formation detail-page with-fixed-nav">
+        <div class="container">
+            <div class="experiences-list">
+                <article class="experience-card experience-detail" id="sae1-05">
+                    <h2>SAÉ 1.05 — Outil de reporting des gros fichiers</h2>
+                    <p class="experience-date">Semestre 1 · Python · Analyse de l’espace disque</p>
+
+                    <div class="project-showcase">
+                        <div class="project-showcase-content">
+                            <p class="detail-intro">
+                                Dans le cadre de la SAÉ 1.05, nous avons développé un outil de reporting permettant
+                                d’analyser l’espace disque d’un ordinateur afin de localiser rapidement les fichiers les
+                                plus volumineux présents dans une arborescence donnée.
+                            </p>
+
+                            <div class="detail-highlight">
+                                <strong>Présentation du projet :</strong>
+                                <p>
+                                    Ce projet répond à une problématique fréquente en administration système : le manque
+                                    d’espace de stockage sur les postes utilisateurs pouvant empêcher certaines mises à jour
+                                    ou l’installation de nouveaux logiciels.
+                                </p>
+                            </div>
+                        </div>
+
+                        <figure class="project-visual">
+                            <div class="project-visual-frame">
+                                <div class="project-visual-placeholder">
+                                    <span>Capture d’écran du projet</span>
+                                    <small>Ajoute ici une image du camembert, de l’interface ou du script généré.</small>
+                                </div>
+                            </div>
+                            <figcaption>Tu peux placer ici une capture de l’interface graphique, du graphique circulaire ou du fichier JSON.</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Présentation du projet</h3>
+                        <p>
+                            L’objectif principal du projet est de faciliter la maintenance d’un parc informatique en
+                            automatisant la recherche des fichiers occupant le plus d’espace disque. L’application est
+                            compatible Windows, MacOS et Linux.
+                        </p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Fonctionnement général</h3>
+                        <ol>
+                            <li>Un premier script Python permet à l’utilisateur de sélectionner un répertoire de base grâce à une interface graphique PyQt5.</li>
+                            <li>Un second script analyse récursivement tous les fichiers contenus dans ce répertoire et ses sous-dossiers.</li>
+                            <li>Les fichiers sont triés par taille décroissante afin de conserver uniquement les plus volumineux.</li>
+                            <li>Les résultats sont enregistrés dans un fichier JSON.</li>
+                            <li>Un troisième script génère une interface graphique affichant les données sous forme de camembert accompagné de légendes interactives.</li>
+                            <li>L’utilisateur peut sélectionner certains fichiers grâce à des cases à cocher afin de générer automatiquement un script PowerShell de suppression.</li>
+                        </ol>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Technologies utilisées</h3>
+                        <ul>
+                            <li>PyQt5 pour l’interface graphique</li>
+                            <li>PyQtChart pour la création du graphique circulaire</li>
+                            <li>pathlib pour la gestion multiplateforme des chemins de fichiers</li>
+                            <li>json pour le stockage des données</li>
+                            <li>PowerShell pour l’automatisation et la suppression des fichiers</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Aspects techniques</h3>
+                        <p>
+                            Chaque fichier analysé est stocké sous la forme :
+                        </p>
+                        <p><strong>[chemin_complet_du_fichier, taille_en_octets]</strong></p>
+                        <p>
+                            Les fichiers sont ensuite triés grâce à la fonction <strong>sorted()</strong> associée à une
+                            fonction <strong>lambda</strong>. Le programme conserve uniquement les 100 plus gros fichiers
+                            dépassant une taille minimale définie.
+                        </p>
+                        <p>
+                            Le projet a également nécessité une attention particulière concernant la compatibilité entre
+                            les systèmes d’exploitation, notamment pour la gestion des chemins Windows utilisant les
+                            antislashs (\\).
+                        </p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Résultat final</h3>
+                        <p>
+                            Le résultat obtenu est une application graphique capable de visualiser rapidement les fichiers
+                            occupant le plus d’espace disque. Le camembert permet d’identifier facilement les fichiers
+                            dominants tandis que les légendes détaillent leur emplacement et leur taille.
+                        </p>
+                        <p>
+                            L’utilisateur peut ensuite générer un script PowerShell sécurisé permettant de supprimer
+                            uniquement les fichiers sélectionnés après double confirmation.
+                        </p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Conclusion</h3>
+                        <p>
+                            Cette SAÉ nous a permis de mettre en pratique la programmation Python, la programmation
+                            orientée objet, la manipulation de fichiers, la création d’interfaces graphiques, la gestion
+                            de données JSON, ainsi que l’automatisation système avec PowerShell.
+                        </p>
+                        <p>
+                            Ce projet se rapproche d’un véritable outil utilisé en administration système et montre comment
+                            Python peut être utilisé pour créer des applications complètes mêlant analyse de données,
+                            visualisation et automatisation.
+                        </p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Compétences mobilisées</h3>
+                        <ul>
+                            <li>Programmation Python</li>
+                            <li>Programmation orientée objet</li>
+                            <li>Manipulation de fichiers</li>
+                            <li>Création d’interfaces graphiques</li>
+                            <li>Gestion de données JSON</li>
+                            <li>Automatisation système avec PowerShell</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-center">
+                        <a href="../index.html#projets" class="btn btn-primary">Retour aux projets</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Louis Erb - Tous droits réservés</p>
+            <h3>Liens utiles</h3>
+            <div>
+                <p>
+                    <a href="https://www.arte.tv/fr/" target="_blank" rel="noreferrer">ARTE   |   </a>
+                    <a href="https://www.api-restauration.com/" target="_blank" rel="noreferrer">API Restauration   |   </a>
+                    <a href="https://www.42mulhouse.fr/" target="_blank" rel="noreferrer">École 42 Mulhouse   |   </a>
+                    <a href="https://www.iutcolmar.uha.fr/" target="_blank" rel="noreferrer">IUT Colmar   |   </a>
+                    <a href="https://github.com/glufy100" target="_blank" rel="noreferrer">GitHub   |   </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/site.js" defer></script>
+</body>
+</html>
